@@ -4,11 +4,9 @@ form.addEventListener("submit",function(event){
       event.preventDefault() ;
       let name=document.getElementById("name").value;
       let email=document.getElementById("emailid").value;
-       axios.post("https://crudcrud.com/api/84d8e0fbe4de49afbf894b9326e452af/appointment",{
-        "name":`"${name}"`,
-        "email":`"${email}"`
-        }).then((respone)=>{
+       axios.get("https://crudcrud.com/api/84d8e0fbe4de49afbf894b9326e452af/appointment/54fget424645g4234554").then((respone)=>{
         console.log(respone)
+              
         })
         .catch((err)=>{
         console.log(err)
